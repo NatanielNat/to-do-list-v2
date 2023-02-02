@@ -29,7 +29,8 @@ margin-top: 20px;
 display: flex;
 gap: 10px;
 
-@media(max-width:700px){
+@media(max-width:900px){
+    padding:20px 40px;
     display: flex;
     flex-direction: column;
     text-aligne:center;

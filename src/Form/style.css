@@ -33,6 +33,7 @@
 
 @media(max-width:900px){
     .form {
+        padding:20px 40px 0;
         display: grid;
         gap: 20px;
     }
