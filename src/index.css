@@ -17,16 +17,17 @@ body {
   justify-content: center;
   background: hsl(0, 0%, 90%);
   font-family: 'Seymour One', sans-serif;
- overflow-x:auto;
- overflow-y:auto;
+ overflow:auto;
 }
 @media(width:600px) {
   body{
     width:100%;
     padding:20px 50px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align:center;
   }
 }
 
