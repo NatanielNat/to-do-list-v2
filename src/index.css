@@ -20,10 +20,13 @@ body {
  overflow-x:auto;
  overflow-y:auto;
 }
-@media(width:700px) {
+@media(width:600px) {
   body{
     width:100%;
     padding:20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
