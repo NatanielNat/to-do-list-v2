@@ -18,8 +18,3 @@ body {
   background: hsl(0, 0%, 90%);
   font-family: 'Seymour One', sans-serif;
 }
-@media(max-width:900px){
-  .body{
-    max-width: 00px;
-  }
-}

@@ -27,6 +27,7 @@ const {
 
   return (
     <>
+    <div className="mainBody">
       <Header title="Lista Zadan" />
       <div className="container">
         <Clock />
@@ -47,6 +48,7 @@ const {
         hideDone={hideDone}
         removeTask={removeTask}
         toggleTaskDone={toggleTaskDone} />
+        </div>
     </>
   );
 }
