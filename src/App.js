@@ -1,24 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+import Form from "./Form"
+import Buttons from "./Buttons"
+import Tasks from "./Tasks"
+import Header from "./Header"
+import { Clock } from "./Clock"
+import React, { useState, useEffect } from "react"
+import { useTasks} from "./useTasks";
 
 function App() {
+  const [hideDone, setHideDone] = useState(false);
+
+  const toggleHideDone = () => {
+    setHideDone(hideDone => !hideDone)
+  };
+
+const { 
+         tasks,
+        removeTask,
+        toggleTaskDone,
+        setAllDone,
+        addNewTask,
+        removeAllTasks,
+
+} = useTasks()
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header title="Lista Zadan" />
+      <div className="container">
+        <Clock />
+        <div className="inputs">
+          <Form
+            addNewTask={addNewTask}
+          />
+        </div>
+        <Buttons
+          tasks={tasks}
+          hideDone={hideDone}
+          toggleHideDone={toggleHideDone}
+          setAllDone={setAllDone}
+          removeAllTasks={removeAllTasks}
+        />
+      </div>
+      <Tasks tasks={tasks}
+        hideDone={hideDone}
+        removeTask={removeTask}
+        toggleTaskDone={toggleTaskDone} />
+    </>
   );
 }
 
