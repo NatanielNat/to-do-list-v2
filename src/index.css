@@ -19,7 +19,7 @@ body {
   font-family: 'Seymour One', sans-serif;
  overflow:auto;
 }
-@media(width:600px) {
+@media(max-width:500px) {
   body{
     width:100%;
     padding:20px 50px;
