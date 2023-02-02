@@ -17,4 +17,6 @@ body {
   justify-content: center;
   background: hsl(0, 0%, 90%);
   font-family: 'Seymour One', sans-serif;
+ overflow-x:auto;
+ overflow-y:auto;
 }
