@@ -2,7 +2,7 @@ import "./style.css";
 import {Button} from "./styled";
 
 
-const Tasks = ({tasks,hideDone,removeTask,toggleTaskDone}) => (
+const TaskList = ({tasks,hideDone,removeTask,toggleTaskDone}) => (
     <ul className="js-taskList">
     {tasks.map(task=>(
         <li
@@ -24,4 +24,4 @@ const Tasks = ({tasks,hideDone,removeTask,toggleTaskDone}) => (
   );
 
 
-export default Tasks;
+export default TaskList;
