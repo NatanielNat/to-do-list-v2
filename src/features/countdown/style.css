@@ -1,0 +1,30 @@
+.container_cd{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container_cd{
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(to top right,pink,teal);
+    padding:0 8%;
+}
+.container_cd p{
+   
+    text-align: center;
+    padding-top:30px;
+    font-size:40px;
+    font-weight: 800;
+    text-transform:uppercase;
+}
+.countdown__timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.countdown__timer div{
+    flex-basis:100px;
+    text-align: center;
+}
